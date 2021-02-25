@@ -21,3 +21,7 @@ SAM has only one hyperparameter namely `rho` that controls neighborhood of the p
 
 ## Findings
 
+|             | Number of Parameters (million) | Final Test Accuracy (%) |
+|-------------|:------------------------------:|:-----------------------:|
+|   With SAM  |            0.575114            |           80.5          |
+| Without SAM |            0.575114            |           83.1          |
