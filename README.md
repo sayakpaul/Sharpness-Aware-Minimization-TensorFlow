@@ -25,3 +25,7 @@ SAM has only one hyperparameter namely `rho` that controls neighborhood of the p
 |-------------|:------------------------------:|:-----------------------:|
 |   With SAM  |            0.575114            |           80.5          |
 | Without SAM |            0.575114            |           83.1          |
+
+
+## Acknowledgements
+* David Samuel's [PyTorch implementation](https://github.com/davda54/sam)
