@@ -14,10 +14,10 @@ Before moving to the findings, please be aware of the following notable differen
 * ResNet20 (attributed to [this repository](https://github.com/GoogleCloudPlatform/keras-idiomatic-programmer/blob/master/zoo/resnet/resnet_cifar10.py)) is used as opposed to PyramidNet and WideResNet. 
 * ShakeDrop regularization has not been used.
 * Two simple augmentation transformations (random crop and random brightness) have been used as opposed to Cutout, AutoAugment. 
-* Adam has been used as the optimizer with the default arguments as provided by TensorFlow with a `ReduceLROnPlateau`. Table 1 of the original paper suggests to use SGD with different configurations. 
+* Adam has been used as the optimizer with the default arguments as provided by TensorFlow with a `ReduceLROnPlateau`. Table 1 of the original paper suggests using SGD with different configurations. 
 * Instead of training for full number of epochs I used early stopping with a patience of 10.
 
-SAM has only one hyperparameter namely `rho` that controls neighborhood of the parameter space. In my experiments, it's defaulted to 0.05. For other details related to training configuration (i.e. network depth, learning rate, batch size, etc.) please refer to the notebooks.
+SAM has only one hyperparameter namely `rho` that controls the neighborhood of the parameter space. In my experiments, it's defaulted to 0.05. For other details related to training configuration (i.e. network depth, learning rate, batch size, etc.) please refer to the notebooks.
 
 ## Findings
 
