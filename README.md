@@ -9,7 +9,7 @@ My goal with this repository is to be able to quickly train neural networks with
 
 ## Notes
 
-Before moving to the findings, please be aware of the following notable differences of my implementation:
+Before moving to the findings, please be aware of the following notable differences in my implementation:
 
 * ResNet20 (attributed to [this repository](https://github.com/GoogleCloudPlatform/keras-idiomatic-programmer/blob/master/zoo/resnet/resnet_cifar10.py)) is used as opposed to PyramidNet and WideResNet. 
 * ShakeDrop regularization has not been used.
