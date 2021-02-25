@@ -1,7 +1,9 @@
 # Sharpness-Aware-Minimization-TensorFlow
 This repository provides a minimal implementation sharpness-aware minimization (SAM) ([Sharpness-Aware Minimization for Efficiently Improving Generalization](https://arxiv.org/abs/2010.01412)) in TensorFlow 2. SAM is motivated by the connections between the geometry of loss landscape of deep neural networks and their generalization ability. SAM attempts to simultaneously minimize loss value as well as loss curvature thereby seeking parameters in neighborhoods having uniformly low loss value. This is indeed from traditional SGD-based optimization that seeks parameters having low loss values on an individual basis. The figure below (taken from the original paper) demonstrates the effects of using SAM - 
 
-![](https://i.ibb.co/1zP7gJN/image.png)
+<p align="center">
+<img src="https://i.ibb.co/1zP7gJN/image.png" width=700></img>
+</p>
 
 My goal with this repository is to be able to quickly train neural networks with and without SAM. All the experiments are shown in the `SAM.ipynb` notebook ([![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sayakpaul/Sharpness-Aware-Minimization-TensorFlow/blob/main/SAM.ipynb)). The notebook is end-to-end executable on Google Colab. Furthermore, they utilize the free TPUs (TPUv2-8) Google Colab provides allowing readers to experiment very quickly.
 
