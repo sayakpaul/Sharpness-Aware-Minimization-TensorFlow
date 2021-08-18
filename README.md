@@ -5,7 +5,7 @@ This repository provides a minimal implementation of sharpness-aware minimizatio
 <img src="https://i.ibb.co/1zP7gJN/image.png" width=700></img>
 </p>
 
-My goal with this repository is to be able to quickly train neural networks with and without SAM. All the experiments are shown in the `SAM.ipynb` notebook ([![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sayakpaul/Sharpness-Aware-Minimization-TensorFlow/blob/main/SAM.ipynb)). The notebook is end-to-end executable on Google Colab. Furthermore, they utilize the free TPUs (TPUv2-8) Google Colab provides allowing readers to experiment very quickly.
+My goal with this repository is to be able to quickly train neural networks with and without SAM. All the experiments are shown in the `SAM.ipynb` notebook ([![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sayakpaul/Sharpness-Aware-Minimization-TensorFlow/blob/main/SAM.ipynb)). The notebook is end-to-end executable on Google Colab. Furthermore, the notebook utilizes the free TPUs (TPUv2-8) Google Colab provides allowing quick experimentation.
 
 ## Notes
 
@@ -17,7 +17,7 @@ Before moving to the findings, please be aware of the following notable differen
 * Adam has been used as the optimizer with the default arguments as provided by TensorFlow with a `ReduceLROnPlateau`. Table 1 of the original paper suggests using SGD with different configurations. 
 * Instead of training for full number of epochs I used early stopping with a patience of 10.
 
-SAM has only one hyperparameter namely `rho` that controls the neighborhood of the parameter space. In my experiments, it's defaulted to 0.05. For other details related to training configuration (i.e. network depth, learning rate, batch size, etc.) please refer to the notebooks.
+SAM has only one hyperparameter namely `rho` that controls the neighborhood of the parameter space. In my experiments, it's defaulted to 0.05. For other details related to training configuration (i.e. network depth, learning rate, batch size, etc.) please refer to [the notebook](https://colab.research.google.com/github/sayakpaul/Sharpness-Aware-Minimization-TensorFlow/blob/main/SAM.ipynb).
 
 ## Findings
 
