@@ -23,9 +23,12 @@ SAM has only one hyperparameter namely `rho` that controls the neighborhood of t
 
 |             | Number of Parameters (million) | Final Test Accuracy (%) |
 |-------------|:------------------------------:|:-----------------------:|
-|   With SAM  |            0.575114            |           80.5          |
-| Without SAM |            0.575114            |           83.1          |
+|   With SAM  |            0.575114            |           82.7          |
+| Without SAM |            0.575114            |           82.9          |
 
+Note that with the current experiment setup, 
+* With-SAM run for 100 epochs for 8 minutes.
+* Without-SAM tends to terminate early due to slow convergence. The shown run ended at 78 epochs for 6 minutes; another run ended at 72 epochs with accuracy of 79.5%.
 
 ## Acknowledgements
 * David Samuel's [PyTorch implementation](https://github.com/davda54/sam)
